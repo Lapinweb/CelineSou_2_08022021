@@ -1,0 +1,32 @@
+/* Polices*/
+@font-face
+{
+    font-family: 'Raleway';
+    src: url(Polices/Raleway-Italic-VariableFont_wght.ttf),
+         url(Polices/Raleway-VariableFont_wght.ttf);
+}
+
+body
+{
+font-family: Raleway, sans-serif;
+}
+
+#bloc_page
+{
+    width: 90%;
+    margin: auto;
+}
+
+/*Styles principaux de la page*/
+
+
+/*Header*/
+
+
+/*Navigation*/
+
+
+/*Main*/
+
+
+/*Footer*/
