@@ -1,32 +1,74 @@
-/* Polices*/
+/* Polices personnalisées*/
 @font-face
 {
     font-family: 'Raleway';
-    src: url(Polices/Raleway-Italic-VariableFont_wght.ttf),
-         url(Polices/Raleway-VariableFont_wght.ttf);
+    src: url(Polices/Raleway-VariableFont_wght.ttf);
 }
 
+/*Styles principaux de la page*/
 body
 {
 font-family: Raleway, sans-serif;
 }
-
 #bloc_page
 {
-    width: 90%;
+    width: 92%;
     margin: auto;
 }
 
-/*Styles principaux de la page*/
-
-
 /*Header*/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
 
-
-/*Navigation*/
-
+/*Navigation header*/
+header nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+header nav ul li
+{
+    margin-right: 50px;
+}
+header nav ul li a
+{
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+#lien_inscription /*le lien "S'inscrire" est toujours en bleu*/
+{
+    color:#0065FC;
+    font-weight: bold;    
+}
+header nav ul li a:hover
+{
+    color: #0065FC;
+    text-decoration: underline;
+}
+header nav ul li a:focus
+{
+    color: #0065FC;
+}
 
 /*Main*/
+main
+{
+    margin-top: 40px;
+}
+h1
+{
+    font-size: 1.3em;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
 
 
 /*Footer*/
+
+
+/*Navigation footer*/
