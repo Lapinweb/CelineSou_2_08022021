@@ -58,7 +58,7 @@ header a:focus
 /*Main*/
 main
 {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 h1
 {
@@ -71,7 +71,7 @@ h1 + p
     font-size: 1em;
 }
 
-/*barre de recherche*/
+/*Barre de recherche*/
 .searchbar
 {
     margin-top: 30px;
@@ -83,9 +83,11 @@ h1 + p
 {
     background-color:#F2F2F2;
     width: 49px;
-    text-align: center;
     padding-top: 15px;
     border-radius: 14px 0 0 14px;;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .searchbar input
 {
@@ -97,15 +99,100 @@ h1 + p
 .searchbar a
 {
     width: 135px;
-    padding-top: 12px;
     background-color: #0065FC;
     color: white;
     text-decoration: none;
-    text-align: center;
     font-weight: 600;
     border-radius: 0 14px 14px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/*Filtre*/
+.filtre
+{
+    height: 49px;
+    margin-top: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: flex;
+}
+
+.titrefiltre
+{
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.filtre p
+{
+    margin-right: 20px;
+    
+}
+
+.filtre a
+{
+    text-decoration: none;
+    margin-right: 30px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.filtre a:hover
+{
+    background-color: #DEEBFF;
+    border: 1px solid #0065FC;
+}
+
+.filtre i
+{
+    margin-right: 10px;
+    text-align: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    height: 47px;
+    width: 48px;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorie
+{
+    color: black;
+}
+
+/*Nombre de résultats*/
+.n_result
+{
+    margin-top: 25px;
+    display: flex;
+    align-items: baseline;
+}
+
+.n_result i
+{
+    margin-right: 15px;
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Section Hébergements*/
+
+/*Aside Les plus populaires*/
+
+/*Section activités*/
 
 /*Footer*/
 
