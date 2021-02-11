@@ -8,6 +8,7 @@
 /*Styles principaux de la page*/
 body
 {
+overflow-x: hidden;   
 font-family: Raleway, sans-serif;
 }
 #bloc_page
@@ -29,10 +30,11 @@ header ul
 {
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
 }
 header li
 {
-    margin-right: 50px;
+    margin-left: 28%;
 }
 header a
 {
@@ -112,11 +114,11 @@ h1 + p
 /*Filtre*/
 .filtre
 {
-    height: 49px;
     margin-top: 30px;
     font-size: 1.1em;
     font-weight: bold;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .titrefiltre
@@ -134,6 +136,7 @@ h1 + p
 
 .filtre a
 {
+    height: 47px;
     text-decoration: none;
     margin-right: 30px;
     border: 2px solid #F2F2F2;
@@ -195,6 +198,46 @@ h1 + p
 /*Section activités*/
 
 /*Footer*/
+footer
+{
+    background-color: #F2F2F2;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    
+}
 
+footer nav
+{
+    margin: 30px auto 30px 4%;
+    display: flex;
+}
 
-/*Navigation footer*/
+footer div
+{
+    margin-right: 18%;
+}
+
+footer h1
+{
+    margin-bottom: 23px;
+    font-size: 1.1em;
+}
+
+footer ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li
+{
+    margin-bottom: 10px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
