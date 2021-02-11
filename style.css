@@ -60,8 +60,15 @@ header a:focus
 /*Main*/
 main
 {
-    margin-top: 30px;
+    margin-top: 30px;  
 }
+
+
+/*Recherche*/
+#search
+{
+}
+
 h1
 {
     font-size: 1.3em;
@@ -118,7 +125,7 @@ h1 + p
     font-size: 1.1em;
     font-weight: bold;
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .titrefiltre
@@ -133,25 +140,30 @@ h1 + p
     margin-right: 20px;
     
 }
-
-.filtre a
+#boutoncategorie
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#boutoncategorie a
 {
     height: 47px;
     text-decoration: none;
     margin-right: 30px;
+    margin-bottom: 10px;
     border: 2px solid #F2F2F2;
     border-radius: 25px;
     display: flex;
     align-items: center;
 }
 
-.filtre a:hover
+#boutoncategorie a:hover
 {
     background-color: #DEEBFF;
     border: 1px solid #0065FC;
 }
 
-.filtre i
+#boutoncategorie i
 {
     margin-right: 10px;
     text-align: center;
@@ -192,10 +204,34 @@ h1 + p
 }
 
 /*Section Hébergements*/
+#hebpop
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergements
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    flex-basis: 67% ;
+}
+
+#hebergements a
+{
+}
 
 /*Aside Les plus populaires*/
-
+#populaires
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    flex-basis: 30%;
+}
 /*Section activités*/
+#activites
+{
+}
 
 /*Footer*/
 footer
