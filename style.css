@@ -222,7 +222,7 @@ h1 + p
 {
 }
 
-.vignetteheb
+.lienheb
 {
     text-decoration: none;
     color: black;
@@ -236,20 +236,66 @@ h1 + p
     height: 200px;
 }
 
-#hebergements h2
+.imgheb
 {
-    font-size: 1em;
+    width:232px;
+    height: 115px;
+    border-radius: 15px 15px 0 0;
+    margin: 5px 5px 0 5px;
+    padding-bottom: 0;
 }
 
-#hebergements p
+.descriptionheb
+{
+    margin: 5px auto auto 10px;
+    padding: 0;
+    height: ;
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionheb h2
+{
+    font-size: 1em;
+    margin: 0 0 4px 0;
+    padding: 0;
+}
+
+.descriptionheb p
 {
     font-size: 0.9em;
+    margin: 0 0 3px 0;
+    padding: 0;
+    
 }
 
 #plus
 {
     text-decoration: none;
     color: #0065FC;
+}
+
+/*Note en étoile*/
+.noteetoile
+{
+}
+
+.noteetoile i
+{
+    font-size: 0.7em;
+    width: 9px;
+    margin: 0;
+    padding: 0;
+}
+
+.bleue
+{
+    color: #0065FC;
+}
+
+.grise
+{
+    color: #F2F2F2;
 }
 
 /*Aside Les plus populaires*/
