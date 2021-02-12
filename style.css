@@ -2,14 +2,14 @@
 @font-face
 {
     font-family: 'Raleway';
-    src: url(Polices/Raleway-VariableFont_wght.ttf);
+    src: url(Polices/Raleway-VariableFont_wght.ttf) format('truetype');
 }
 
 /*Styles principaux de la page*/
 body
 {
 overflow-x: hidden;   
-font-family: Raleway, sans-serif;
+font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 #bloc_page
 {
@@ -212,13 +212,44 @@ h1 + p
 
 #hebergements
 {
+    padding: 2%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    flex-basis: 67% ;
+    flex-basis: 67%; 
 }
 
-#hebergements a
+#hebergements h1
 {
+}
+
+.vignetteheb
+{
+    text-decoration: none;
+    color: black;
+}
+
+.vignetteheb
+{
+    background-color: white;
+    border-radius: 15px;
+    width: 242px;
+    height: 200px;
+}
+
+#hebergements h2
+{
+    font-size: 1em;
+}
+
+#hebergements p
+{
+    font-size: 0.9em;
+}
+
+#plus
+{
+    text-decoration: none;
+    color: #0065FC;
 }
 
 /*Aside Les plus populaires*/
