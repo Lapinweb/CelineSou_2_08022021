@@ -211,7 +211,7 @@
             margin-bottom: 4px;
             padding: 0;
         }
-        .descriptionheb p, .descriptionpop h2
+        .descriptionheb p, .descriptionpop p
         {
             font-size: 0.9em;
             margin: 0 0 3px 0px;
@@ -318,7 +318,7 @@
         }
         .descriptionheb
         {
-            padding: 5px auto auto auto;
+            padding-top: 5px;
             margin-left: 10px;
             display: flex;
             flex-direction: column;
@@ -329,9 +329,35 @@
         #populaires
         {
             padding: 10px;
-            width: 31%;
+            width: 30%;
             background-color: #F2F2F2;
             border-radius: 20px;
+            display: grid;
+            grid-template-columns: 1fr 320px 20px 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            ". titreaside . ."
+            ". pop1 . ."
+            ". pop2 . ."
+            ". pop3 . .";
+        }
+        .titreaside
+        {
+            grid-area: titreaside;
+            margin: 30px 0 0 0;
+            font-size: 1.35em;
+        }
+        .pop1
+        {
+            grid-area: pop1;
+        }
+        .pop2
+        {
+            grid-area: pop2;
+        }
+        .pop3
+        {
+            grid-area: pop3;
         }
         .vignettepop
         {
@@ -339,7 +365,6 @@
             border-radius: 15px;
             width: 340px;
             height: 142px;
-            margin: 5px;
             display: flex;
             flex-direction: row;
         }
@@ -355,6 +380,21 @@
             margin: 5px 0 5px 5px;
             padding: 0;
             object-fit: cover;
+        }
+        .descriptionpop
+        {
+            margin: 15px 15px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .descriptionpop h2
+        {
+            margin-bottom: 7px;
+        }
+        .descriptionpop p
+        {
+            margin-bottom: 35px;
         }
     
 
