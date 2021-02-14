@@ -204,7 +204,7 @@
         }
 
     /*Description des vignettes*/
-        .descriptionheb h2, .descriptionpop h2
+        .descriptionheb h2, .descriptionpop h2, #activites h2
         {
             font-size: 1em;
             margin-top: 0;
@@ -322,8 +322,7 @@
             margin-left: 10px;
             display: flex;
             flex-direction: column;
-        }
-        
+        }   
 
     /*Aside Les plus populaires*/
         #populaires
@@ -399,8 +398,19 @@
     
 
     /*Section activités*/
-        #activites
+        .vignetteact
         {
+        }
+        .act1 img, .act4 img
+        {
+            width: 305px;
+            height: 385px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        .act2 img
+        {
+
         }
 
 /*Footer*/
