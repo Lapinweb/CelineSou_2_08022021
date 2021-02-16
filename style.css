@@ -323,7 +323,7 @@
         {
             background-color: white;
             border-radius: 15px;
-            box-shadow: 0 0 20px #F2F2F2;
+            box-shadow: 0 3px 10px 10px #F2F2F2;
             margin: 0;
             width: 100%;
             min-width: 190px;
@@ -410,7 +410,7 @@
         {
             background-color: white;
             border-radius: 15px;
-            box-shadow: 0 0 20px #F2F2F2;
+            box-shadow: 0 3px 10px 10px #F2F2F2;
             width: 100%;
             min-width: 289px;
             height: 142px;
@@ -456,34 +456,88 @@
             margin: 0;
             padding: 0;
         }
-    
 
     /*Section activités*/
         #activites
         {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
+            width: 100%; 
+            margin: 40px 0 65px;
+            display: grid;
+            grid-template-columns: 22.5% 1fr 22.5% 1fr 22.5% 1fr 22.5%;
+            grid-template-rows: [haut-titre] 70px [bas-titre haut-images] 232px [milieu-images] 210px [bas-images];
+            
+        }
+        .titreactivites
+        {
+            grid-column: 1/span 7;
+            grid-row: 1/span 1;
+            font-size: 1.4em;
+        }
+        .act1
+        {
+            grid-column: 1/span 1;
+            grid-row: haut-images/bas-images;
+            height: 442px;
+        }
+        .act2
+        {
+            grid-column: 3/span 1;
+            grid-row: haut-images/milieu-images;
+            height: 235px;
+        }
+        .act3
+        {
+            grid-column: 3/span 1;
+            grid-row: milieu-images/bas-images;
+            align-self: end;
+            height: 160px;
+        }
+        .act4
+        {
+            grid-column: 5/span 1;
+            grid-row: haut-images/bas-images;
+            height: 442px;
+        }
+        .act5
+        {
+            grid-column: 7/span 1;
+            grid-row: haut-images/bas-act5;
+            height: 192px;
+        }
+        .act6
+        {
+            grid-column: 7/span 1;
+            grid-row: milieu-images/bas-images;
+            align-self: end;
+            height: 205px;
         }
         .lienact
         {
             width: 100%;
+            min-width: 232px;
             text-decoration: none;
             color: black;
-            border-radius: 15px;
-            box-shadow: 0 0 20px #F2F2F2;
-            
+            border-radius: 20px;
+            box-shadow: 0 3px 10px 10px #F2F2F2;
         }
         .vignetteact
         {
+            width: 100%;
             display: flex;
             flex-direction: column;
         }
         .vignetteact img
         {
-            width: 303px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
             object-fit: cover;
-            border-radius: 15px 15px 0 0;
+            border-radius: 20px 20px 0 0;
+        }
+        .vignetteact h3
+        {
+            margin-left: 6%;
+            font-size: 0.4em;
         }
         .act1 img, .act4 img
         {
@@ -492,7 +546,6 @@
         .act2 img
         {
             height: 185px;
-            object-fit: cover;
         }
         .act3 img
         {
