@@ -1,10 +1,23 @@
 /* Polices personnalisées*/
 @font-face
-{
-    font-family: 'Raleway';
-    src: url(Polices/Raleway-VariableFont_wght.ttf) format('truetype');
-    font-style: normal;
-}
+    {
+        font-family: 'Raleway';
+        src: url(Polices/Raleway-VariableFont_wght.ttf) format('truetype');
+        src: url(Polices/static/Raleway-Regular.ttf) format('truetype');
+        font-style: normal;
+    }
+@font-face
+    {
+        font-family: 'Raleway';
+        src: url(Polices/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
+        font-style: italic;
+    }
+@font-face
+    {
+        font-family: "Raleway";
+        src: url(Polices/static/Raleway-Bold.ttf) format('truetype');
+        font-weight: bold;
+    }
 
 /*Styles principaux de la page*/
     body
@@ -105,13 +118,16 @@
             border: 1px solid #F2F2F2;
             padding-left: 15px;
         }
-        .searchbar a
+        .searchbar button
         {
             width: 135px;
             background-color: #0065FC;
             color: white;
             text-decoration: none;
-            font-weight: 600;
+            font-family: Raleway;
+            font-size: 1em;
+            font-weight: 570;
+            border: none;
             border-radius: 0 14px 14px 0;
             display: flex;
             justify-content: center;
@@ -144,25 +160,30 @@
             display: flex;
             flex-wrap: wrap;
         }
-        #boutoncategorie a
+        #boutoncategorie button
         {
             height: 47px;
             text-decoration: none;
+            font-family: Raleway;
+            font-size: 1em;
+            font-weight: bold;
             margin-right: 30px;
             margin-bottom: 10px;
+            background-color: white;
             border: 2px solid #F2F2F2;
             border-radius: 25px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
         }
-        #boutoncategorie a:hover
+        #boutoncategorie button:hover
         {
+            border: 3px solid #DEEBFF;
             background-color: #DEEBFF;
-            border: 1px solid #0065FC;
         }
         #boutoncategorie i
         {
-            margin-right: 10px;
+            margin: 0 10px 0 -8px;
             text-align: center;
             color: #0065FC;
             background-color: #DEEBFF;
@@ -302,6 +323,7 @@
         {
             background-color: white;
             border-radius: 15px;
+            box-shadow: 0 0 20px #F2F2F2;
             margin: 0;
             width: 100%;
             min-width: 190px;
@@ -347,10 +369,10 @@
             background-color: #F2F2F2;
             border-radius: 20px;
             display: grid;
-            grid-template-columns: 1fr 80% 5% 1fr;
-            grid-template-rows: 75px auto auto auto;
+            grid-template-columns: 1fr 70% 15% 1fr;
+            grid-template-rows: 68px auto auto auto;
             grid-template-areas: 
-            ". titreaside . ."
+            ". titreaside iconepop ."
             ". pop1 pop1 ."
             ". pop2 pop2 ."
             ". pop3 pop3 .";
@@ -360,10 +382,17 @@
         .titreaside
         {
             grid-area: titreaside;
-            margin: 30px 0 0 0;
-            font-size: 1.35em;
-            justify-self: flex-start;
-            align-self: flex-end;
+            justify-self: start;
+            align-self: center;
+            font-size: 1.3em;
+        }
+        .fa-chart-line
+        {
+            grid-area: iconepop;
+            justify-self: end;
+            align-self: center;
+            margin: 20px 0 0;
+            font-size: 1.5em;
         }
         .pop1
         {
@@ -381,6 +410,7 @@
         {
             background-color: white;
             border-radius: 15px;
+            box-shadow: 0 0 20px #F2F2F2;
             width: 100%;
             min-width: 289px;
             height: 142px;
@@ -390,6 +420,7 @@
             width: 100%;
             height: 100%;
             display: flex;
+            
         }
         .imgpop
         {
@@ -430,15 +461,23 @@
     /*Section activités*/
         #activites
         {
-        }
-        .vignetteact
-        {
-            border-radius: 15px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .lienact
         {
+            width: 100%;
             text-decoration: none;
             color: black;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #F2F2F2;
+            
+        }
+        .vignetteact
+        {
+            display: flex;
+            flex-direction: column;
         }
         .vignetteact img
         {
