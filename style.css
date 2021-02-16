@@ -1,279 +1,600 @@
 /* Polices personnalisées*/
 @font-face
-{
-    font-family: 'Raleway';
-    src: url(Polices/Raleway-VariableFont_wght.ttf);
-}
+    {
+        font-family: 'Raleway';
+        src: url(Polices/Raleway-VariableFont_wght.ttf) format('truetype');
+        src: url(Polices/static/Raleway-Regular.ttf) format('truetype');
+        font-style: normal;
+    }
+@font-face
+    {
+        font-family: 'Raleway';
+        src: url(Polices/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
+        font-style: italic;
+    }
+@font-face
+    {
+        font-family: "Raleway";
+        src: url(Polices/static/Raleway-Bold.ttf) format('truetype');
+        font-weight: bold;
+    }
 
 /*Styles principaux de la page*/
-body
-{
-overflow-x: hidden;   
-font-family: Raleway, sans-serif;
-}
-#bloc_page
-{
-    width: 92%;
-    margin: auto;
-}
+    body
+    {
+    overflow-x: hidden;   
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    }
+    #bloc_page
+    {
+        width: 94%;
+        margin: auto;
+    }
 
 /*Header*/
-header
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 35px;
-}
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+    }
 
-/*Navigation header*/
-header ul
-{
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-}
-header li
-{
-    margin-left: 28%;
-}
-header a
-{
-    color: black;
-    text-decoration: none;
-    font-size: 1em;
-}
-#lien_inscription /*le lien "S'inscrire" est toujours en bleu*/
-{
-    color:#0065FC;
-    font-weight: bold;    
-}
-header a:hover
-{
-    color: #0065FC;
-    text-decoration: underline;
-}
-header a:focus
-{
-    color: #0065FC;
-}
+    /*Navigation header*/
+        header ul
+        {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        header li
+        {
+            margin-left: 28%;
+        }
+        header a
+        {
+            color: black;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        #lien_inscription /*le lien "S'inscrire" est toujours en bleu*/
+        {
+            color:#0065FC;
+            font-weight: bold;    
+        }
+        header a:hover
+        {
+            color: #0065FC;
+            text-decoration: underline;
+        }
+        header a:focus
+        {
+            color: #0065FC;
+        }
 
 /*Main*/
-main
-{
-    margin-top: 30px;  
-}
+    main
+    {
+        margin-top: 30px;  
+    }
 
 
-/*Recherche*/
-#search
-{
-}
+    /*Recherche*/
+        #search
+        {
+        }
+        h1
+        {
+            font-size: 1.3em;
+            margin-bottom: 0px;
+        }
+        h1 + p
+        {
+            margin-top: 5px;
+            font-size: 1em;
+        }
 
-h1
-{
-    font-size: 1.3em;
-    margin-bottom: 0px;
-}
-h1 + p
-{
-    margin-top: 5px;
-    font-size: 1em;
-}
+    /*Barre de recherche*/
+        .searchbar
+        {
+            margin-top: 30px;
+            height: 48px;
+            font-size: 1.1em;
+            display: flex;
+        }
+        .searchbar i
+        {
+            background-color:#F2F2F2;
+            width: 49px;
+            padding-top: 15px;
+            border-radius: 14px 0 0 14px;;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .searchbar input
+        {
+            width: 225px;
+            font-size: 1em;
+            border: 1px solid #F2F2F2;
+            padding-left: 15px;
+        }
+        .searchbar button
+        {
+            width: 135px;
+            background-color: #0065FC;
+            color: white;
+            text-decoration: none;
+            font-family: Raleway;
+            font-size: 1em;
+            font-weight: 570;
+            border: none;
+            border-radius: 0 14px 14px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-/*Barre de recherche*/
-.searchbar
-{
-    margin-top: 30px;
-    height: 48px;
-    font-size: 1.1em;
-    display: flex;
-}
-.searchbar i
-{
-    background-color:#F2F2F2;
-    width: 49px;
-    padding-top: 15px;
-    border-radius: 14px 0 0 14px;;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.searchbar input
-{
-    width: 225px;
-    font-size: 1em;
-    border: 1px solid #F2F2F2;
-    padding-left: 15px;
-}
-.searchbar a
-{
-    width: 135px;
-    background-color: #0065FC;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 0 14px 14px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    /*Filtre*/
+        .filtre
+        {
+            margin-top: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .titrefiltre
+        {
+            padding-right: 25px;
+            display: flex;
+            align-items: center;
+        }
+        .filtre p
+        {
+            margin-right: 20px;
+            
+        }
+        #boutoncategorie
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #boutoncategorie button
+        {
+            height: 47px;
+            text-decoration: none;
+            font-family: Raleway;
+            font-size: 1em;
+            font-weight: bold;
+            margin-right: 30px;
+            margin-bottom: 10px;
+            background-color: white;
+            border: 2px solid #F2F2F2;
+            border-radius: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #boutoncategorie button:hover
+        {
+            border: 3px solid #DEEBFF;
+            background-color: #DEEBFF;
+        }
+        #boutoncategorie i
+        {
+            margin: 0 10px 0 -8px;
+            text-align: center;
+            color: #0065FC;
+            background-color: #DEEBFF;
+            height: 47px;
+            width: 48px;
+            border-radius: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .categorie
+        {
+            color: black;
+        }
 
-/*Filtre*/
-.filtre
-{
-    margin-top: 30px;
-    font-size: 1.1em;
-    font-weight: bold;
-    display: flex;
-    align-items: flex-start;
-}
-
-.titrefiltre
-{
-    padding-right: 25px;
-    display: flex;
-    align-items: center;
-}
-
-.filtre p
-{
-    margin-right: 20px;
+    /*Nombre de résultats*/
+        .n_result
+        {
+            margin: 25px auto 25px auto;
+            display: flex;
+            align-items: baseline;
+        }
+        .n_result i
+        {
+            margin-right: 15px;
+            color: #0065FC;
+            border: 2px solid #F2F2F2;
+            height: 20px;
+            width: 20px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     
-}
-#boutoncategorie
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-#boutoncategorie a
-{
-    height: 47px;
-    text-decoration: none;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    border: 2px solid #F2F2F2;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-}
+    /*Lien des vignettes*/
+        .lienvignette
+        {
+            text-decoration: none;
+            color: black;
+        }
 
-#boutoncategorie a:hover
-{
-    background-color: #DEEBFF;
-    border: 1px solid #0065FC;
-}
+    /*Police des descriptions des vignettes*/
+        .descriptionheb h3, .descriptionpop h3, #activites h3
+        {
+            font-size: 1em;
+        }
+        .descriptionheb p, .descriptionpop p
+        {
+            font-size: 0.9em;
+        }
 
-#boutoncategorie i
-{
-    margin-right: 10px;
-    text-align: center;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    height: 47px;
-    width: 48px;
-    border-radius: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    /*Note en étoile*/
+        .noteetoile i
+        {
+            font-size: 0.75em;
+            width: 9px;
+            margin: 0;
+            padding: 0 1px 0 0;
+        }
+        .bleue
+        {
+            color: #0065FC;
+        }
+        .grise
+        {
+            color: #F2F2F2;
+        }
 
-.categorie
-{
-    color: black;
-}
+    /*Section Hébergements*/
+        #hebergementspopulaires
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        #hebergements
+        {
+            width: 66%;
+            background-color: #F2F2F2;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 1fr 28% 1fr 28% 1fr 28% 1fr ;
+            grid-template-rows: 88px 230px 230px 80px;
+            grid-template-areas:
+            ". titreheb titreheb titreheb . . ."
+            ". heb1 . heb2 . heb3 ."
+            ". heb4 . heb5 . heb6 ."
+            ". afficherplus . . . . .";
+            justify-items: center;
+        }
+        #hebergements h2
+        {
+            grid-area: titreheb;
+            font-size: 1.4em;
+            justify-self: start;
+            align-self: end;
+        }
+        .heb1
+        {
+            grid-area: heb1;
+        }
+        .heb2
+        {
+            grid-area: heb2;
+        }
+        .heb3
+        {
+            grid-area: heb3;
+        }
+        .heb4
+        {
+            grid-area: heb4;
+        }
+        .heb5
+        {
+            grid-area: heb5;
+        }
+        .heb6
+        {
+            grid-area: heb6;
+        }
+        #plus
+        {
+            grid-area: afficherplus;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 10px;
+            justify-self: start;
+        }
+        #plus:hover
+        {
+            text-decoration: underline;
+        }
+        .lienheb
+        {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px 10px #F2F2F2;
+            margin: 0;
+            width: 100%;
+            min-width: 190px;
+            height: 200px;
+        }
+        .vignetteheb
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .imgheb
+        {
+            width:94%;
+            height: 114px;
+            border-radius: 10px 10px 0 0;
+            margin: 3% 3% 0 3%;
+            padding-bottom: 0;
+            object-fit: cover;
+        }
+        .descriptionheb
+        {
+            padding-top: 5px;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+        }
+        .descriptionheb h3
+        {
+            margin: 0 0 4px 0;
+            padding: 0;
+        }
+        .descriptionheb p
+        {
+            margin: 0;
+            padding: 0 0 4px 0;
+        } 
 
-/*Nombre de résultats*/
-.n_result
-{
-    margin-top: 25px;
-    display: flex;
-    align-items: baseline;
-}
+    /*Aside Les plus populaires*/
+        #populaires
+        {
+            padding: 10px;
+            width: 30%;
+            background-color: #F2F2F2;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 1fr 70% 15% 1fr;
+            grid-template-rows: 68px auto auto auto;
+            grid-template-areas: 
+            ". titreaside iconepop ."
+            ". pop1 pop1 ."
+            ". pop2 pop2 ."
+            ". pop3 pop3 .";
+            justify-items: center;
+            align-items: center;
+        }
+        .titreaside
+        {
+            grid-area: titreaside;
+            justify-self: start;
+            align-self: center;
+            font-size: 1.3em;
+        }
+        .fa-chart-line
+        {
+            grid-area: iconepop;
+            justify-self: end;
+            align-self: center;
+            margin: 20px 0 0;
+            font-size: 1.5em;
+        }
+        .pop1
+        {
+            grid-area: pop1;
+        }
+        .pop2
+        {
+            grid-area: pop2;
+        }
+        .pop3
+        {
+            grid-area: pop3;
+        }
+        .lienpop
+        {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px 10px #F2F2F2;
+            width: 100%;
+            min-width: 289px;
+            height: 142px;
+        }
+        .vignettepop
+        {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            
+        }
+        .imgpop
+        {
+            width: 37%;
+            height: 132px;
+            border-radius: 10px 0 0 10px;
+            margin: 5px 0 5px 5px;
+            padding: 0;
+            object-fit: cover;
+        }
 
-.n_result i
-{
-    margin-right: 15px;
-    color: #0065FC;
-    border: 2px solid #F2F2F2;
-    height: 20px;
-    width: 20px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .descriptionpop
+        {
+            width: 49%;
+            height: 100%;
+            margin: 0 7%;
+            padding: 0;
+            display: flex;
+            flex-flow: column;
+        }
+        .descriptionpop h3
+        {
+            margin: 0;
+            padding: 17px 0 7px;
+        }
+        .descriptionpop p
+        {
+            margin: 0;
+            padding: 0 0 35px;
+        }
+        .descriptionpop .noteetoile
+        {
+            margin: 0;
+            padding: 0;
+        }
 
-/*Section Hébergements*/
-#hebpop
-{
-    display: flex;
-    justify-content: space-between;
-}
-
-#hebergements
-{
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    flex-basis: 67% ;
-}
-
-#hebergements a
-{
-}
-
-/*Aside Les plus populaires*/
-#populaires
-{
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    flex-basis: 30%;
-}
-/*Section activités*/
-#activites
-{
-}
+    /*Section activités*/
+        #activites
+        {
+            width: 100%; 
+            margin: 40px 0 65px;
+            display: grid;
+            grid-template-columns: 22.5% 1fr 22.5% 1fr 22.5% 1fr 22.5%;
+            grid-template-rows: [haut-titre] 70px [bas-titre haut-images] 232px [milieu-images] 210px [bas-images];
+            
+        }
+        .titreactivites
+        {
+            grid-column: 1/span 7;
+            grid-row: 1/span 1;
+            font-size: 1.4em;
+        }
+        .act1
+        {
+            grid-column: 1/span 1;
+            grid-row: haut-images/bas-images;
+            height: 442px;
+        }
+        .act2
+        {
+            grid-column: 3/span 1;
+            grid-row: haut-images/milieu-images;
+            height: 235px;
+        }
+        .act3
+        {
+            grid-column: 3/span 1;
+            grid-row: milieu-images/bas-images;
+            align-self: end;
+            height: 160px;
+        }
+        .act4
+        {
+            grid-column: 5/span 1;
+            grid-row: haut-images/bas-images;
+            height: 442px;
+        }
+        .act5
+        {
+            grid-column: 7/span 1;
+            grid-row: haut-images/bas-act5;
+            height: 192px;
+        }
+        .act6
+        {
+            grid-column: 7/span 1;
+            grid-row: milieu-images/bas-images;
+            align-self: end;
+            height: 205px;
+        }
+        .lienact
+        {
+            width: 100%;
+            min-width: 232px;
+            text-decoration: none;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px 10px #F2F2F2;
+        }
+        .vignetteact
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .vignetteact img
+        {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+        .vignetteact h3
+        {
+            margin-left: 6%;
+            font-size: 0.4em;
+        }
+        .act1 img, .act4 img
+        {
+            height: 385px;
+        }
+        .act2 img
+        {
+            height: 185px;
+        }
+        .act3 img
+        {
+            height: 110px;
+        }
+        .act5 img
+        {
+            height: 140px;
+        }
+        .act6 img
+        {
+            height: 155px;
+        }
 
 /*Footer*/
-footer
-{
-    background-color: #F2F2F2;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    
-}
-
-footer nav
-{
-    margin: 30px auto 30px 4%;
-    display: flex;
-}
-
-footer div
-{
-    margin-right: 18%;
-}
-
-footer h1
-{
-    margin-bottom: 23px;
-    font-size: 1.1em;
-}
-
-footer ul
-{
-    list-style-type: none;
-    padding: 0;
-}
-
-footer li
-{
-    margin-bottom: 10px;
-}
-
-footer a
-{
-    text-decoration: none;
-    color: black;
-    font-size: 1em;
-}
+    footer
+    {
+        background-color: #F2F2F2;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        
+    }
+    footer nav
+    {
+        margin: 30px auto 30px 4%;
+        display: flex;
+    }
+    footer div
+    {
+        width: 33%;
+    }
+    footer h2
+    {
+        margin-bottom: 23px;
+        font-size: 1.1em;
+    }
+    footer ul
+    {
+        list-style-type: none;
+        padding: 0;
+    }
+    footer li
+    {
+        margin-bottom: 10px;
+    }
+    footer a
+    {
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+    }
