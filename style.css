@@ -46,9 +46,13 @@
             display: flex;
             justify-content: flex-end;
         }
+        header nav
+        {
+            width: 50%;
+        }
         header li
         {
-            margin-left: 28%;
+            margin: auto 6% auto 4%;
         }
         header a
         {
@@ -76,8 +80,7 @@
     {
         margin-top: 30px;  
     }
-
-
+    
     /*Recherche*/
         #search
         {
@@ -183,7 +186,8 @@
         }
         #boutoncategorie i
         {
-            margin: 0 10px 0 -8px;
+            font-size: 1.2em;
+            margin: 0 10px 0 -10px;
             text-align: center;
             color: #0065FC;
             background-color: #DEEBFF;
@@ -323,7 +327,6 @@
         {
             background-color: white;
             border-radius: 15px;
-            box-shadow: 0 3px 10px 10px #F2F2F2;
             margin: 0;
             width: 100%;
             min-width: 190px;
@@ -410,7 +413,6 @@
         {
             background-color: white;
             border-radius: 15px;
-            box-shadow: 0 3px 10px 10px #F2F2F2;
             width: 100%;
             min-width: 289px;
             height: 142px;
@@ -431,7 +433,6 @@
             padding: 0;
             object-fit: cover;
         }
-
         .descriptionpop
         {
             width: 49%;
@@ -465,49 +466,44 @@
             display: grid;
             grid-template-columns: 22.5% 1fr 22.5% 1fr 22.5% 1fr 22.5%;
             grid-template-rows: [haut-titre] 70px [bas-titre haut-images] 232px [milieu-images] 210px [bas-images];
-            
+            grid-template-areas:
+            "titreact titreact titreact titreact titreact titreact titreact"
+            "act1 . act2 . act4 . act5"
+            "act1 . act3 . act4 . act6";
         }
         .titreactivites
         {
-            grid-column: 1/span 7;
-            grid-row: 1/span 1;
-            font-size: 1.4em;
+            grid-area: titreact;
         }
         .act1
         {
-            grid-column: 1/span 1;
-            grid-row: haut-images/bas-images;
+            grid-area: act1;
             height: 442px;
         }
         .act2
         {
-            grid-column: 3/span 1;
-            grid-row: haut-images/milieu-images;
+            grid-area: act2;
             height: 235px;
         }
         .act3
         {
-            grid-column: 3/span 1;
-            grid-row: milieu-images/bas-images;
+            grid-area: act3;
             align-self: end;
             height: 160px;
         }
         .act4
         {
-            grid-column: 5/span 1;
-            grid-row: haut-images/bas-images;
+            grid-area: act4;
             height: 442px;
         }
         .act5
         {
-            grid-column: 7/span 1;
-            grid-row: haut-images/bas-act5;
+            grid-area: act5;
             height: 192px;
         }
         .act6
         {
-            grid-column: 7/span 1;
-            grid-row: milieu-images/bas-images;
+            grid-area: act6;
             align-self: end;
             height: 205px;
         }
@@ -567,16 +563,18 @@
         width: 100%;
         position: absolute;
         left: 0;
-        
     }
     footer nav
     {
-        margin: 30px auto 30px 4%;
+        width: 94%;
+        margin: 30px auto 30px auto;
         display: flex;
+        flex-wrap: wrap;
     }
     footer div
     {
         width: 33%;
+        min-width: 255px;
     }
     footer h2
     {
@@ -598,3 +596,80 @@
         color: black;
         font-size: 1em;
     }
+
+/*Responsive tablette*/
+@media screen and (max-width: 1024px)
+{
+    /*Section hébergements et populaires*/
+    #hebergementspopulaires
+        {
+            flex-direction: column-reverse;
+        }
+    #hebergements
+        {
+            width: 100%;
+            grid-template-columns: 1fr 42% 1fr 42% 1fr;
+            grid-template-rows: 88px 230px 230px 230px 80px;
+            grid-template-areas:
+            ". titreheb titreheb titreheb 1fr"
+            ". heb1 . heb2 ."
+            ". heb3 . heb4 ."
+            ". heb5 . heb6 ."
+            ". afficherplus afficherplus . .";
+        }
+    #populaires
+        {
+            width: 100%;
+            padding: 0 0 20px 0;
+            margin-bottom: 20px;
+            grid-template-columns: 1fr 80% 5% 1fr ;
+            grid-template-rows: 60px 10px 142px 10px 142px 10px 142px;
+            grid-template-areas:
+            ". titreaside iconepop ."
+            ". . . ."
+            ". pop1 pop1 ."
+            ". . . ."
+            ". pop2 pop2 ."
+            ". . . ."
+            ". pop3 pop3 .";
+        }
+
+    /*Section activités*/
+    #activites
+        {
+            grid-template-columns: 44% 1fr 44%;
+            grid-template-rows: 70px 235px 210px 40px 235px 210px;
+            grid-template-areas: 
+            "titreact titreact titreact"
+            "act1 . act2"
+            "act1 . act3"
+            ". . ."
+            "act4 . act5"
+            "act4 . act6";
+            justify-items: center;
+            align-items: center;
+        }
+
+    /*Footer*/
+    footer nav
+    {
+        justify-content: stretch;
+    }
+    footer div
+    {
+    }
+}
+
+/*Resppnsive mobile*/
+@media screen and (max-width: 768px)
+{
+    /*Header*/
+
+    /*Recherche*/
+
+    /*Section hébergements et populaires*/
+
+    /*Section activités*/
+
+    /*Footer*/
+}
