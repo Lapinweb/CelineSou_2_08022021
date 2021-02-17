@@ -60,7 +60,7 @@
             text-decoration: none;
             font-size: 1em;
         }
-        #lien_inscription /*le lien "S'inscrire" est toujours en bleu*/
+        .lien_inscription /*le lien "S'inscrire" est toujours en bleu*/
         {
             color:#0065FC;
             font-weight: bold;    
@@ -566,15 +566,15 @@
     }
     footer nav
     {
-        width: 94%;
-        margin: 30px auto 30px auto;
+        width: 92%;
+        margin: 30px auto;
         display: flex;
         flex-wrap: wrap;
     }
     footer div
     {
         width: 33%;
-        min-width: 255px;
+        min-width: 227px;
     }
     footer h2
     {
@@ -595,6 +595,10 @@
         text-decoration: none;
         color: black;
         font-size: 1em;
+    }
+    footer a:hover
+    {
+        text-decoration: underline;
     }
 
 /*Responsive tablette*/
@@ -649,21 +653,30 @@
             justify-items: center;
             align-items: center;
         }
+        .titreactivites
+        {
+            justify-self: flex-start;
+        }
 
     /*Footer*/
-    footer nav
-    {
-        justify-content: stretch;
-    }
     footer div
     {
+        width: 25%;
+        margin: 0 4%;
     }
 }
 
-/*Resppnsive mobile*/
-@media screen and (max-width: 768px)
+/*Responsive mobile*/
+@media screen and (max-width: 576px)
 {
     /*Header*/
+    .logoreservia
+    {
+    }
+    header ul 
+    {
+        flex-flow: row wrap-reverse;
+    }
 
     /*Recherche*/
 
