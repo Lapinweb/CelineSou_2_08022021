@@ -101,10 +101,14 @@
         {
             margin-top: 30px;
             height: 48px;
+            width: 409px;
             font-size: 1.1em;
+            border-top: 1px solid #F2F2F2;
+            border-bottom: 2px solid #F2F2F2;
+            border-radius: 14px;
             display: flex;
         }
-        .searchbar i
+        .fa-map-marker-alt
         {
             background-color:#F2F2F2;
             width: 49px;
@@ -117,11 +121,12 @@
         .searchbar input
         {
             width: 225px;
-            font-size: 1em;
-            border: 1px solid #F2F2F2;
             padding-left: 15px;
+            font-size: 1em;
+            border: none;
+            outline: none;
         }
-        .searchbar button
+        .boutonrecherche
         {
             width: 135px;
             background-color: #0065FC;
@@ -135,6 +140,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .boutonrecherche i
+        {
+            display: none;
         }
 
     /*Filtre*/
@@ -670,15 +679,35 @@
 @media screen and (max-width: 576px)
 {
     /*Header*/
-    .logoreservia
-    {
-    }
-    header ul 
-    {
-        flex-flow: row wrap-reverse;
-    }
 
     /*Recherche*/
+    .searchbar
+    {
+        width: 100%;
+    }
+    .searchbar input
+    {
+        width: 90%;
+    }
+    .fa-map-marker-alt
+    {
+        width: 49px;
+        min-width: 49px;
+    }
+    .boutonrecherche
+    {
+        width: 49px;
+        min-width: 49px;
+        border-radius: 14px;
+    }
+    .boutonrecherche span
+    {
+        display: none;
+    }
+    .boutonrecherche i
+    {
+        display: block;
+    }
 
     /*Section hébergements et populaires*/
 
