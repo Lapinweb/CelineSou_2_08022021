@@ -148,9 +148,7 @@
             width: 49px;
             padding-top: 15px;
             border-radius: 14px 0 0 14px;
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            text-align: center;
         }
         .searchbar input
         {
@@ -200,46 +198,39 @@
             display: flex;
             align-items: center;
         }
-        .filtre p
-        {
-            margin-right: 20px;
-            
-        }
-        #boutoncategorie
+        .boutonsfiltre
         {
             display: flex;
             flex-wrap: wrap;
         }
-        #boutoncategorie button
+        .boutonsfiltre button
         {
             height: 47px;
+            margin-bottom: 15px;
+            margin-right: 28px;
             text-decoration: none;
             font-family: Raleway;
             font-size: 1em;
             font-weight: bold;
-            margin-right: 30px;
-            margin-bottom: 10px;
             background-color: white;
             border: 2px solid #F2F2F2;
             border-radius: 25px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
         }
-        #boutoncategorie button:hover
+        .boutonsfiltre button:hover
         {
             border: 3px solid #DEEBFF;
             background-color: #DEEBFF;
         }
-        #boutoncategorie i
+        .boutonsfiltre i
         {
             font-size: 1.2em;
             margin: 0 10px 0 -10px;
-            text-align: center;
             color: #0065FC;
             background-color: #DEEBFF;
             height: 47px;
-            width: 48px;
+            width: 46px;
             border-radius: 26px;
             display: flex;
             justify-content: center;
@@ -247,6 +238,7 @@
         }
         .categorie
         {
+            margin-right: 13px;
             color: black;
         }
 
@@ -811,6 +803,11 @@
     .boutonrecherche i
     {
         display: inline-block;
+    }
+    .boutonsfiltre button
+    {
+        font-size: 0.85em;
+        margin-right: 10px;
     }
 
     /*Section hébergements et populaires*/
