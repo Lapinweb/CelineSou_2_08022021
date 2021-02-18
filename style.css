@@ -34,36 +34,61 @@
 /*Header*/
     header
     {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 35px;
+        width: 100%;
+        margin: 30px auto 35px;
+        display: grid;
+        grid-template-columns: 14% 1fr 348px 134px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logoreservia . navigation inscription";
+        align-items: baseline;
+    }
+    .logoreservia
+    {
+        grid-area: logoreservia;
+        margin-top: 15px;
+        justify-self: start;
+        align-self: start;
     }
 
     /*Navigation header*/
+        header nav
+        {
+            grid-area: navigation;
+        }
         header ul
         {
             list-style-type: none;
             display: flex;
-            justify-content: flex-end;
-        }
-        header nav
-        {
-            width: 50%;
+            justify-content: space-around;
         }
         header li
         {
-            margin: auto 6% auto 4%;
+            margin-left: 0;
         }
         header a
         {
             color: black;
             text-decoration: none;
             font-size: 1em;
+            padding: 44px 29px 0;
         }
-        .lien_inscription /*le lien "S'inscrire" est toujours en bleu*/
+        .listehebergements a
+        {
+            border-top: 2px solid #0065FC;
+            color: #0065FC;
+        }
+        .inscription
+        {
+            grid-area: inscription;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .lien_inscription
         {
             color:#0065FC;
-            font-weight: bold;    
+            font-weight: bold;
         }
         header a:hover
         {
@@ -113,7 +138,7 @@
             background-color:#F2F2F2;
             width: 49px;
             padding-top: 15px;
-            border-radius: 14px 0 0 14px;;
+            border-radius: 14px 0 0 14px;
             display: flex;
             justify-content: center;
             align-content: center;
@@ -131,19 +156,23 @@
             width: 135px;
             background-color: #0065FC;
             color: white;
-            text-decoration: none;
-            font-family: Raleway;
             font-size: 1em;
-            font-weight: 570;
             border: none;
             border-radius: 0 14px 14px 0;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+        .boutonrecherche span
+        {
+            text-decoration: none;
+            font-family: Raleway;
+            font-weight: 570;
+        }
         .boutonrecherche i
         {
             display: none;
+            font-size: 1.3em;
         }
 
     /*Filtre*/
@@ -613,6 +642,11 @@
 /*Responsive tablette*/
 @media screen and (max-width: 1024px)
 {
+    /*Section header*/
+    header li
+        {
+            margin-left: 0;
+        }
     /*Section hébergements et populaires*/
     #hebergementspopulaires
         {
@@ -679,6 +713,7 @@
 @media screen and (max-width: 576px)
 {
     /*Header*/
+    
 
     /*Recherche*/
     .searchbar
