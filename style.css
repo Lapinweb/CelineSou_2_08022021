@@ -796,6 +796,7 @@
     #populaires
     {
         border-radius: 0;
+        padding: 13px 0 40px;
         width: 100vw;
         position: relative;
         left: 50%;
@@ -806,6 +807,25 @@
     }
 
     /*Section hébergements*/
+    #hebergements
+    {
+        background-color: transparent;
+        grid-template-columns: 100%;
+        grid-template-rows: 60px 230px 230px 230px 230px 230px 230px 80px;
+        grid-template-areas:
+        "titreheb"
+        "heb1"
+        "heb2"
+        "heb3"
+        "heb4"
+        "heb5"
+        "heb6"
+        "afficherplus";
+    }
+    .lienheb
+    {
+        box-shadow: 0 3px 10px 10px #F2F2F2;
+    }
 
     /*Section activités*/
 
