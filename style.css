@@ -491,7 +491,7 @@
             margin: 40px 0 65px;
             display: grid;
             grid-template-columns: 22.5% 1fr 22.5% 1fr 22.5% 1fr 22.5%;
-            grid-template-rows: [haut-titre] 70px [bas-titre haut-images] 232px [milieu-images] 210px [bas-images];
+            grid-template-rows: 70px 232px 210px ;
             grid-template-areas:
             "titreact titreact titreact titreact titreact titreact titreact"
             "act1 . act2 . act4 . act5"
@@ -826,8 +826,35 @@
     {
         box-shadow: 0 3px 10px 10px #F2F2F2;
     }
+    .imgheb
+    {
+        width: 96%;
+        margin: 2% 2% 0 2%;
+    }
 
     /*Section activités*/
+    #activites
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: 60px 230px 230px 230px 230px 230px 230px;
+        grid-template-areas:
+        "titreact"
+        "act1"
+        "act2"
+        "act3"
+        "act4"
+        "act5"
+        "act6";
+        justify-items: center;
+    }
+    .lienact
+    {
+        height: 185px;
+    }
+    .lienact img
+    {
+        height: 132px;
+    }
 
-    /*Footer*/
+
 }
