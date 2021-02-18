@@ -59,7 +59,6 @@
         padding: 0;
         list-style-type: none;
         display: flex;
-        justify-content: space-between;
     }
     header li
     {
@@ -221,20 +220,23 @@
             border: 3px solid #DEEBFF;
             background-color: #DEEBFF;
         }
-        .boutonsfiltre i
+        .iconefiltre
         {
-            font-size: 1.2em;
             margin: 0 10px 0 -10px;
-            color: #0065FC;
             background-color: #DEEBFF;
             height: 47px;
             width: 46px;
             border-radius: 26px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            line-height: 47px;
+            vertical-align: middle;
         }
-        .categorie
+        .boutonsfiltre i
+        {
+            font-size: 1.2em;
+            color: #0065FC;
+        }
+        .categoriefiltre
         {
             margin-right: 13px;
             color: black;
@@ -247,17 +249,19 @@
             display: flex;
             align-items: baseline;
         }
-        .n_result i
+        .cercleinfo
         {
             margin-right: 15px;
-            color: #0065FC;
+            height: 22px;
+            width: 22px;
             border: 2px solid #F2F2F2;
-            height: 20px;
-            width: 20px;
             border-radius: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+        }
+        .fa-info
+        {
+            font-size: 0.8em;
+            color: #0065FC;
         }
     
     /*Lien des vignettes*/
@@ -322,31 +326,31 @@
             justify-self: start;
             align-self: end;
         }
-        .heb1
+        .hebergement1
         {
             grid-area: heb1;
         }
-        .heb2
+        .hebergement2
         {
             grid-area: heb2;
         }
-        .heb3
+        .hebergement3
         {
             grid-area: heb3;
         }
-        .heb4
+        .hebergement4
         {
             grid-area: heb4;
         }
-        .heb5
+        .hebergement5
         {
             grid-area: heb5;
         }
-        .heb6
+        .hebergement6
         {
             grid-area: heb6;
         }
-        #plus
+        #afficherplus
         {
             grid-area: afficherplus;
             color: black;
@@ -356,11 +360,11 @@
             margin: 10px;
             justify-self: start;
         }
-        #plus:hover
+        #afficherplus:hover
         {
             text-decoration: underline;
         }
-        .lienheb
+        .lienhebergement
         {
             background-color: white;
             border-radius: 15px;
@@ -429,19 +433,19 @@
             margin: 20px 0 0;
             font-size: 1.5em;
         }
-        .pop1
+        .populaire1
         {
             grid-area: pop1;
         }
-        .pop2
+        .populaire2
         {
             grid-area: pop2;
         }
-        .pop3
+        .populaire3
         {
             grid-area: pop3;
         }
-        .lienpop
+        .lienpopulaire
         {
             background-color: white;
             border-radius: 15px;
@@ -501,39 +505,39 @@
         {
             grid-area: titreact;
         }
-        .act1
+        .activite1
         {
             grid-area: act1;
             height: 442px;
         }
-        .act2
+        .activite2
         {
             grid-area: act2;
             height: 235px;
         }
-        .act3
+        .activite3
         {
             grid-area: act3;
             align-self: end;
             height: 160px;
         }
-        .act4
+        .activite4
         {
             grid-area: act4;
             height: 442px;
         }
-        .act5
+        .activite5
         {
             grid-area: act5;
             height: 192px;
         }
-        .act6
+        .activite6
         {
             grid-area: act6;
             align-self: end;
             height: 205px;
         }
-        .lienact
+        .lienactivites
         {
             width: 100%;
             min-width: 232px;
@@ -544,7 +548,7 @@
             display: flex;
             flex-direction: column;
         }
-        .lienact img
+        .lienactivites img
         {
             width: 100%;
             margin: 0;
@@ -552,28 +556,28 @@
             object-fit: cover;
             border-radius: 20px 20px 0 0;
         }
-        .lienact h3
+        .lienactivites h3
         {
             margin-left: 6%;
             font-size: 0.4em;
         }
-        .act1 img, .act4 img
+        .activite1 img, .activite4 img
         {
             height: 385px;
         }
-        .act2 img
+        .activite2 img
         {
             height: 185px;
         }
-        .act3 img
+        .activite3 img
         {
             height: 110px;
         }
-        .act5 img
+        .activite5 img
         {
             height: 140px;
         }
-        .act6 img
+        .activite6 img
         {
             height: 155px;
         }
@@ -822,7 +826,7 @@
         "heb6"
         "afficherplus";
     }
-    .lienheb
+    .lienhebergement
     {
         box-shadow: 0 3px 10px 10px #F2F2F2;
     }
@@ -847,11 +851,11 @@
         "act6";
         justify-items: center;
     }
-    .lienact
+    .lienactivites
     {
         height: 185px;
     }
-    .lienact img
+    .lienactivites img
     {
         height: 132px;
     }
