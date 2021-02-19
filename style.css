@@ -148,7 +148,6 @@
             border-radius: 14px 0 0 14px;
             text-align: center;
             line-height: 48px;
-            vertical-align: middle;
         }
         .searchbar input
         {
@@ -170,11 +169,11 @@
             justify-content: center;
             align-items: center;
         }
-        .boutonrecherche span
+        .texte_rechercher
         {
             text-decoration: none;
             font-family: Raleway;
-            font-weight: 570;
+            font-weight: bold;
         }
         .iconeloupe
         {
@@ -233,7 +232,6 @@
             border-radius: 26px;
             text-align: center;
             line-height: 47px;
-            vertical-align: middle;
             background-color: #DEEBFF;
             color: #0065FC;
             font-size: 1.2em;
@@ -788,7 +786,7 @@
         min-width: 49px;
         border-radius: 14px;
     }
-    .boutonrecherche span
+    .texte_rechercher
     {
         display: none;
     }
