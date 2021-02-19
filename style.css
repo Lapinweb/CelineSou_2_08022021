@@ -707,7 +707,7 @@
         grid-template-rows: 60px 65px;
         grid-template-areas: 
         "logoreservia inscription"
-        ". .";
+        "navigation navigation";
     }
     .inscription
     {
@@ -723,11 +723,11 @@
     }
     header nav
     {
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 95px;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw;
+        margin-top: 32px;
     }
     header ul
     {
