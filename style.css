@@ -10,6 +10,7 @@
     {
         font-family: 'Raleway';
         src: url(Polices/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
+        src: url(Polices/static/Raleway-Italic.ttf);
         font-style: italic;
     }
 @font-face
@@ -37,7 +38,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 14% 1fr 300px 132px;
-        grid-template-rows: 90px;
+        grid-template-rows: 85px;
         grid-template-areas: 
         "logoreservia . navigation inscription";
         align-items: flex-start;
@@ -111,7 +112,7 @@
 /*Main*/
     main
     {
-        margin-top: 30px;
+        margin-top: 32px;
         width: 100%; 
     }
     
@@ -119,23 +120,23 @@
         h1
         {
             font-size: 1.3em;
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
         h1 + p
         {
-            margin-top: 5px;
-            font-size: 1em;
+            margin-top: 9px;
+            font-size: 0.95em;
         }
 
     /*Barre de recherche*/
         .searchbar
         {
-            margin-top: 30px;
+            margin: 20px 0 30px;
             height: 48px;
             width: 409px;
             font-size: 1.1em;
             border-top: 1px solid #F2F2F2;
-            border-bottom: 2px solid #F2F2F2;
+            border-bottom: 1px solid #F2F2F2;
             border-radius: 14px;
             display: flex;
         }
@@ -173,16 +174,15 @@
             font-family: Raleway;
             font-weight: 570;
         }
-        .boutonrecherche i
+        .fa-search
         {
             display: none;
-            font-size: 1.3em;
+            font-size: 0.9em;
         }
 
     /*Filtre*/
         .filtre
         {
-            margin-top: 30px;
             font-size: 1.1em;
             font-weight: bold;
             display: flex;
@@ -245,7 +245,8 @@
     /*Nombre de résultats*/
         .n_result
         {
-            margin: 25px auto 25px auto;
+            margin: 10px auto 25px;
+            font-size: 1em;
             display: flex;
             align-items: baseline;
         }
@@ -272,11 +273,11 @@
         }
 
     /*Police des descriptions des vignettes*/
-        .descriptionheb h3, .descriptionpop h3, #activites h3
+        .descriptionhebergement h3, .descriptionpopulaire h3, #activites h3
         {
             font-size: 1em;
         }
-        .descriptionheb p, .descriptionpop p
+        .descriptionhebergement p, .descriptionpopulaire p
         {
             font-size: 0.9em;
         }
@@ -284,7 +285,7 @@
     /*Note en étoile*/
         .noteetoile i
         {
-            font-size: 0.75em;
+            font-size: 0.7em;
             width: 9px;
             margin: 0;
             padding: 0 1px 0 0;
@@ -373,7 +374,7 @@
             min-width: 190px;
             height: 200px;
         }
-        .imgheb
+        .imghebergement
         {
             width:94%;
             height: 114px;
@@ -382,19 +383,19 @@
             padding-bottom: 0;
             object-fit: cover;
         }
-        .descriptionheb
+        .descriptionhebergement
         {
             padding-top: 5px;
             margin-left: 5%;
             display: flex;
             flex-direction: column;
         }
-        .descriptionheb h3
+        .descriptionhebergement h3
         {
             margin: 0 0 4px 0;
             padding: 0;
         }
-        .descriptionheb p
+        .descriptionhebergement p
         {
             margin: 0;
             padding: 0 0 4px 0;
@@ -409,7 +410,7 @@
             border-radius: 20px;
             display: grid;
             grid-template-columns: 1fr 70% 15% 1fr;
-            grid-template-rows: 68px auto auto auto;
+            grid-template-rows: 62px auto auto auto;
             grid-template-areas: 
             ". titreaside iconepop ."
             ". pop1 pop1 ."
@@ -423,7 +424,7 @@
             grid-area: titreaside;
             justify-self: start;
             align-self: center;
-            font-size: 1.3em;
+            font-size: 1.35em;
         }
         .fa-chart-line
         {
@@ -454,7 +455,7 @@
             height: 142px;
             display: flex;
         }
-        .imgpop
+        .imgpopulaire
         {
             width: 37%;
             height: 132px;
@@ -463,7 +464,7 @@
             padding: 0;
             object-fit: cover;
         }
-        .descriptionpop
+        .descriptionpopulaire
         {
             width: 49%;
             height: 100%;
@@ -472,17 +473,17 @@
             display: flex;
             flex-flow: column;
         }
-        .descriptionpop h3
+        .descriptionpopulaire h3
         {
             margin: 0;
             padding: 17px 0 7px;
         }
-        .descriptionpop p
+        .descriptionpopulaire p
         {
             margin: 0;
             padding: 0 0 35px;
         }
-        .descriptionpop .noteetoile
+        .descriptionpopulaire .noteetoile
         {
             margin: 0;
             padding: 0;
@@ -504,6 +505,7 @@
         .titreactivites
         {
             grid-area: titreact;
+            font-size: 1.4em;
         }
         .activite1
         {
@@ -767,6 +769,7 @@
     .searchbar
     {
         width: 100%;
+        margin: 40px 0 15px;
     }
     .searchbar input
     {
@@ -791,6 +794,8 @@
     {
         display: inline-block;
     }
+
+    /*Filtre*/
     .boutonsfiltre button
     {
         font-size: 0.85em;
@@ -808,6 +813,7 @@
         margin-left: -50vw;
         margin-right: -50vw;
         grid-template-columns: 1fr 85% 4% 1fr;
+        grid-template-rows: 60px 18px 142px 10px 142px 10px 142px;
     }
 
     /*Section hébergements*/
@@ -815,7 +821,7 @@
     {
         background-color: transparent;
         grid-template-columns: 100%;
-        grid-template-rows: 60px 230px 230px 230px 230px 230px 230px 80px;
+        grid-template-rows: 60px repeat(6, 212px) 38px;
         grid-template-areas:
         "titreheb"
         "heb1"
@@ -830,17 +836,22 @@
     {
         box-shadow: 0 3px 10px 10px #F2F2F2;
     }
-    .imgheb
+    .imghebergement
     {
         width: 96%;
         margin: 2% 2% 0 2%;
+    }
+    #afficherplus
+    {
+        margin: 22px 10px 10px;
     }
 
     /*Section activités*/
     #activites
     {
+        margin: 40px 0 40px;
         grid-template-columns: 100%;
-        grid-template-rows: 60px 230px 230px 230px 230px 230px 230px;
+        grid-template-rows: 50px repeat(6, 210px);
         grid-template-areas:
         "titreact"
         "act1"
@@ -854,11 +865,10 @@
     .lienactivites
     {
         height: 185px;
+        align-self: center;
     }
     .lienactivites img
     {
         height: 132px;
     }
-
-
 }
