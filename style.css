@@ -144,9 +144,11 @@
         {
             background-color:#F2F2F2;
             width: 49px;
-            padding-top: 15px;
             border-radius: 14px 0 0 14px;
             text-align: center;
+            height: 48px;
+            line-height: 48px;
+            vertical-align: middle;
         }
         .searchbar input
         {
@@ -174,9 +176,12 @@
             font-family: Raleway;
             font-weight: 570;
         }
-        .fa-search
+        .iconeloupe
         {
             display: none;
+        }
+        .fa-search
+        {
             font-size: 0.9em;
         }
 
@@ -790,7 +795,7 @@
     {
         display: none;
     }
-    .boutonrecherche i
+    .iconeloupe
     {
         display: inline-block;
     }
