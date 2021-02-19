@@ -140,13 +140,13 @@
             border-radius: 14px;
             display: flex;
         }
-        .fa-map-marker-alt
+        .iconemap
         {
             background-color:#F2F2F2;
             width: 49px;
+            height: 48px;
             border-radius: 14px 0 0 14px;
             text-align: center;
-            height: 48px;
             line-height: 48px;
             vertical-align: middle;
         }
@@ -228,18 +228,15 @@
         .iconefiltre
         {
             margin: 0 10px 0 -10px;
-            background-color: #DEEBFF;
             height: 47px;
             width: 46px;
             border-radius: 26px;
             text-align: center;
             line-height: 47px;
             vertical-align: middle;
-        }
-        .boutonsfiltre i
-        {
-            font-size: 1.2em;
+            background-color: #DEEBFF;
             color: #0065FC;
+            font-size: 1.2em;
         }
         .categoriefiltre
         {
