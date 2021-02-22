@@ -2,21 +2,21 @@
 @font-face
     {
         font-family: 'Raleway';
-        src: url(polices/Raleway-VariableFont_wght.ttf) format('truetype');
-        src: url(polices/static/Raleway-Regular.ttf) format('truetype');
+        src: url(police/Raleway-VariableFont_wght.ttf) format('truetype');
+        src: url(police/static/Raleway-Regular.ttf) format('truetype');
         font-style: normal;
     }
 @font-face
     {
         font-family: 'Raleway';
-        src: url(polices/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
-        src: url(polices/static/Raleway-Italic.ttf);
+        src: url(police/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
+        src: url(police/static/Raleway-Italic.ttf);
         font-style: italic;
     }
 @font-face
     {
         font-family: "Raleway";
-        src: url(polices/static/Raleway-Bold.ttf) format('truetype');
+        src: url(police/static/Raleway-Bold.ttf) format('truetype');
         font-weight: bold;
     }
 
@@ -680,7 +680,7 @@
             justify-items: center;
             align-items: center;
         }
-    .titreactivites
+        .titreactivites
         {
             justify-self: flex-start;
         }
@@ -785,7 +785,6 @@
         font-size: 0.85em;
         margin-right: 10px;
     }
-
     /*Section populaires*/
     #populaires
     {
