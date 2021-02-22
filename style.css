@@ -2,21 +2,21 @@
 @font-face
     {
         font-family: 'Raleway';
-        src: url(Polices/Raleway-VariableFont_wght.ttf) format('truetype');
-        src: url(Polices/static/Raleway-Regular.ttf) format('truetype');
+        src: url(polices/Raleway-VariableFont_wght.ttf) format('truetype');
+        src: url(polices/static/Raleway-Regular.ttf) format('truetype');
         font-style: normal;
     }
 @font-face
     {
         font-family: 'Raleway';
-        src: url(Polices/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
-        src: url(Polices/static/Raleway-Italic.ttf);
+        src: url(polices/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
+        src: url(polices/static/Raleway-Italic.ttf);
         font-style: italic;
     }
 @font-face
     {
         font-family: "Raleway";
-        src: url(Polices/static/Raleway-Bold.ttf) format('truetype');
+        src: url(polices/static/Raleway-Bold.ttf) format('truetype');
         font-weight: bold;
     }
 
@@ -66,26 +66,18 @@
         margin: 0;
         padding: 0;
     }
-    header a
+    .lien_menu
     {
         color: black;
         text-decoration: none;
         font-size: 1em;
-        padding: 45px 30px 0;
+        padding: 43px 30px 0;
         margin: 0;
-        position: relative;
     }
-    .vers_hebergements
+    .lien_menuactif
     {
         color: #0065FC;
-    }
-    .vers_hebergements .lienborder
-    {
-        border-top: 2px solid #0065FC;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;;
+        border-top: 3px solid #0065FC;
     }
     .inscription
     {
@@ -98,6 +90,8 @@
     {
         color:#0065FC;
         font-weight: bold;
+        text-decoration: none;
+        font-size: 1em;
     }
     header a:hover
     {
@@ -740,29 +734,19 @@
         width: 50%;
         text-align: center;
     }
-    header a
+    .lien_menu
     {
-        padding: 0 0 15px;
-    }
-    .vers_hebergements, .vers_activites
-    {
-        width: 100%;
         display: inline-block;
+        padding: 0 0 15px;
+        width: 100%;
+        border-bottom: 3px solid #F2F2F2;
     }
-    .vers_hebergements .lienborder
+    .lien_menuactif
     {
+        
         border-top: none;
         border-bottom: 3px solid #0065FC;
-        bottom: 0;
-        width: 100%;
-    }
-    .vers_activites .lienborder
-    {
-        border-bottom: 3px solid #F2F2F2;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 100%;
+        
     }
 
     /*Recherche*/
@@ -835,6 +819,7 @@
     .lienhebergement
     {
         box-shadow: 0 3px 10px 10px #F2F2F2;
+        max-width: 334px;
     }
     .imghebergement
     {
@@ -849,7 +834,7 @@
     /*Section activités*/
     #activites
     {
-        margin: 40px 0 40px;
+        margin: 40px 0;
         grid-template-columns: 100%;
         grid-template-rows: 50px repeat(6, 210px);
         grid-template-areas:
@@ -866,6 +851,7 @@
     {
         height: 185px;
         align-self: center;
+        max-width: 334px;
     }
     .lienactivites img
     {
