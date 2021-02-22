@@ -680,7 +680,7 @@
             justify-items: center;
             align-items: center;
         }
-        .titreactivites
+    .titreactivites
         {
             justify-self: flex-start;
         }
@@ -785,6 +785,7 @@
         font-size: 0.85em;
         margin-right: 10px;
     }
+
     /*Section populaires*/
     #populaires
     {
