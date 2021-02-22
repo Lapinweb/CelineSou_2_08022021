@@ -819,6 +819,7 @@
     .lienhebergement
     {
         box-shadow: 0 3px 10px 10px #F2F2F2;
+        max-width: 334px;
     }
     .imghebergement
     {
@@ -833,7 +834,7 @@
     /*Section activités*/
     #activites
     {
-        margin: 0 0 40px;
+        margin: 40px 0;
         grid-template-columns: 100%;
         grid-template-rows: 50px repeat(6, 210px);
         grid-template-areas:
@@ -850,6 +851,7 @@
     {
         height: 185px;
         align-self: center;
+        max-width: 334px;
     }
     .lienactivites img
     {
