@@ -29,6 +29,7 @@
     #bloc_page
     {
         width: 93%;
+        max-width: 1600px;
         margin: 0 auto;
     }
 
@@ -150,6 +151,11 @@
             font-size: 1em;
             border: none;
             outline: none;
+        }
+        input::placeholder
+        {
+            color: black;
+            opacity: 1;
         }
         .boutonrecherche
         {
